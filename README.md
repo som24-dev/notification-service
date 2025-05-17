@@ -18,7 +18,7 @@ This basic backend service is made using FastAPI. Allows users to send notificat
 1. Clone this repo and go inside the folder
 
 ```bash
-git clone <your-repo-link>
+git clone <https://github.com/som24-dev/notification-service.git >
 cd notification-service
 
 2. Create and activate a virtual environment
