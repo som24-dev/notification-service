@@ -53,7 +53,7 @@ async def send_notification(notification: Notification, background_tasks: Backgr
 @app.get("/users/{user_id}/notifications")
 async def get_user_notifications(user_id: str):
     try:
-        # Attempt to cast to int if applicable
+        # to cast to int if applicable
         try:
             user_id_query = int(user_id)
         except ValueError:
@@ -81,7 +81,7 @@ async def send_with_retries(notification: dict, max_attempts: int = 3, delay: in
             print(f"Attempt {attempt}: Sending notification to user_id={notification['user_id']}")
             if attempt < max_attempts:
                 raise Exception("Simulated failure")  # Force retry for demo
-            print("✅ Notification sent successfully!")
+            print(" Notification sent successfully !!")
             break
         except Exception as e:
             print(f" Attempt {attempt} failed: {str(e)}")
